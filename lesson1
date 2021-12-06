@@ -1,20 +1,20 @@
+    // №1
+
 public class Lesson1 {
-    public static void main(String[] args) {
-        // Task 6 (Test Task 2 - Task 5)
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
+    public static void main(String[] args)
+       
     }
 
-    //Task 2
+     // №2
+    
     public static void printThreeWords() {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
 
-    // Task 3
+    //  №3
+    
     public static void checkSumSign() {
         int a = 25;
         int b = 30;
@@ -27,7 +27,8 @@ public class Lesson1 {
         }
     }
 
-    // Task 4
+    //  №4
+    
     public static void printColor() {
         int value = 100;
 
@@ -40,7 +41,7 @@ public class Lesson1 {
         }
     }
 
-    // Task 5
+    //  №5
     public static void compareNumbers() {
         int a = 10;
         int b = 50;
@@ -51,4 +52,12 @@ public class Lesson1 {
             System.out.println("a < b");
         }
     }
+    
+     //  №6 ( Test 2-5)
+        printThreeWords();
+        checkSumSign();
+        printColor();
+        compareNumbers();
+        }
+    }    
 }
