@@ -1,64 +1,52 @@
-    // №1
+   public class Lesson2 {
+    public static void main(String[] args) {
+        System.out.println(doTask1(1, 9));
+        doTask2(10);
+        System.out.println(doTask3(-25));
+        doTask4("Ivan", 5);
 
-public class Main {
-    public static void main(String[] args)
-       
+        System.out.println(doTask5(1900)); // Task 5*
     }
 
-     // №2
-    
-    public static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
-
-    //  №3
-    
-    public static void checkSumSign() {
-        int a = 25;
-        int b = 30;
+    public static boolean doTask1(int a, int b) {
         int sum = a + b;
+        if (sum >= 10 && sum <=20) {
+            return true;
+        }
+        return false;
+    }
 
-        if (sum >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
+    public static void doTask2(int x) {
+        if (x >= 0) {
+            System.out.println("Положительное");
+        }
+        else {
+            System.out.println("Отприцательное");
         }
     }
 
-    //  №4
-    
-    public static void printColor() {
-        int value = 100;
-
-        if (value <= 0) {
-            System.out.println("Красный");
-        } else if (value > 0 & value <= 100) {
-            System.out.println("Желтый");
-        } else {
-            System.out.println("Зеленый");
+    public static boolean doTask3(int x) {
+        if (x >= 0) {
+            return true;
+        }
+        else {
+            return false;
         }
     }
 
-    //  №5
-    public static void compareNumbers() {
-        int a = 10;
-        int b = 50;
-
-        if (a >= b) {
-            System.out.println("a >= b");
-        } else {
-            System.out.println("a < b");
+    public static void doTask4(String str, int n) {
+        for (int i = 1; i <= n; i++) {
+            System.out.println("[" + i + "]" + " " + str);
         }
     }
-    
-     //  №6 ( Test 2-5)
-        printThreeWords();
-        checkSumSign();
-        printColor();
-        compareNumbers();
-        
+
+    public static boolean doTask5(int year) {
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            return true;
         }
-    }    
+        else {
+            return false;
+        }
+
+    }
 }
