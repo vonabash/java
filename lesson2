@@ -1,9 +1,9 @@
-   public class Lesson2 {
+   public class {
     public static void main(String[] args) {
         System.out.println(doTask1(1, 9));
         doTask2(10);
         System.out.println(doTask3(-25));
-        doTask4("Ivan", 5);
+        doTask4("Sam", 5);
 
         System.out.println(doTask5(1900)); // Task 5*
     }
